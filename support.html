@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrainDeck Support</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            padding: 40px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        .logo {
+            font-size: 60px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            color: #667eea;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .tagline {
+            color: #666;
+            font-size: 1.2em;
+        }
+
+        h2 {
+            color: #667eea;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            border-left: 4px solid #667eea;
+            padding-left: 15px;
+        }
+
+        h3 {
+            color: #764ba2;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        ul, ol {
+            margin-bottom: 20px;
+            padding-left: 30px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        .feature-box {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .contact-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .contact-box h2 {
+            color: white;
+            border: none;
+            padding: 0;
+        }
+
+        .contact-box a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .faq-item {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+
+        .faq-question {
+            font-weight: bold;
+            color: #333;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        .faq-answer {
+            color: #666;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 2px solid #f0f0f0;
+            color: #999;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">🧠</div>
+            <h1>BrainDeck</h1>
+            <p class="tagline">Smart Flashcards for Effective Learning</p>
+        </header>
+
+        <section>
+            <h2>Welcome to BrainDeck Support</h2>
+            <p>BrainDeck is a beautiful, intuitive flashcard app designed to make studying enjoyable and effective. This support page will help you get the most out of your learning experience.</p>
+        </section>
+
+        <section>
+            <h2>Getting Started</h2>
+
+            <h3>Creating Your First Flashcard</h3>
+            <ol>
+                <li>Open BrainDeck on your iPhone or iPad</li>
+                <li>Tap the blue <strong>"New Card"</strong> button at the bottom right</li>
+                <li>Enter your question in the <strong>"Front"</strong> field</li>
+                <li>Enter the answer in the <strong>"Back"</strong> field</li>
+                <li>Optionally, assign the card to a folder</li>
+                <li>Tap <strong>"Save"</strong> to create your flashcard</li>
+            </ol>
+
+            <h3>Creating Folders</h3>
+            <ol>
+                <li>Tap the <strong>"Folder"</strong> button at the bottom</li>
+                <li>Enter a folder name (e.g., "Spanish Vocabulary")</li>
+                <li>Choose a color to identify your folder</li>
+                <li>Optionally, nest it inside another folder</li>
+                <li>Tap <strong>"Save"</strong></li>
+            </ol>
+
+            <h3>Studying Your Flashcards</h3>
+            <ol>
+                <li>Tap any flashcard to open study mode</li>
+                <li><strong>Tap the card</strong> to flip and reveal the answer</li>
+                <li><strong>Swipe left/right</strong> to navigate between cards</li>
+                <li>Use <strong>Previous/Next</strong> buttons for easier navigation</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Key Features</h2>
+
+            <div class="feature-box">
+                <h3>✨ Beautiful Design</h3>
+                <p>Enjoy a modern interface with smooth animations, gradient backgrounds, and 3D card flipping effects that make studying visually engaging.</p>
+            </div>
+
+            <div class="feature-box">
+                <h3>📁 Folder Organization</h3>
+                <p>Create unlimited folders and subfolders to organize flashcards by subject, topic, or course. Color-code folders for quick visual recognition.</p>
+            </div>
+
+            <div class="feature-box">
+                <h3>🎨 Customization</h3>
+                <p>Personalize your learning experience with customizable fonts, font sizes, and colors for both flashcards and folder names.</p>
+            </div>
+
+            <div class="feature-box">
+                <h3>💾 Backup & Restore</h3>
+                <p>Export your flashcards to save backups or share with friends. Import to restore or merge with existing flashcards.</p>
+            </div>
+
+            <div class="feature-box">
+                <h3>🔒 Privacy First</h3>
+                <p>All your data stays on your device. No account required, no tracking, no ads. Your flashcards remain completely private.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Customizing Your Experience</h2>
+
+            <h3>Accessing Settings</h3>
+            <ol>
+                <li>Tap the <strong>gear icon ⚙️</strong> in the top right corner of the main screen</li>
+                <li>Scroll through the settings sections</li>
+            </ol>
+
+            <h3>Flashcard Settings</h3>
+            <ul>
+                <li><strong>Font Size:</strong> Adjust from 16 to 48 points using the slider</li>
+                <li><strong>Font Style:</strong> Choose from System, Rounded, Serif, or Monospaced</li>
+                <li><strong>Text Color:</strong> Select from 9 beautiful colors</li>
+            </ul>
+
+            <h3>Folder Name Settings</h3>
+            <ul>
+                <li><strong>Font Size:</strong> Adjust from 12 to 28 points</li>
+                <li><strong>Font Style:</strong> Choose your preferred font family</li>
+                <li><strong>Text Color:</strong> Customize folder name colors</li>
+            </ul>
+
+            <h3>Reset to Defaults</h3>
+            <p>Tap the red <strong>"Reset to Defaults"</strong> button in Settings to restore original font and color settings.</p>
+        </section>
+
+        <section>
+            <h2>Backup & Restore Guide</h2>
+
+            <h3>Exporting Your Flashcards</h3>
+            <ol>
+                <li>Open <strong>Settings</strong> (gear icon)</li>
+                <li>Scroll to <strong>"Backup & Restore"</strong></li>
+                <li>Tap <strong>"Export Flashcards"</strong></li>
+                <li>Choose where to save:
+                    <ul>
+                        <li>Save to Files app</li>
+                        <li>Save to iCloud Drive</li>
+                        <li>AirDrop to another device</li>
+                        <li>Email to yourself</li>
+                        <li>Share via Messages</li>
+                    </ul>
+                </li>
+            </ol>
+
+            <h3>Importing Flashcards</h3>
+            <ol>
+                <li>Open <strong>Settings</strong></li>
+                <li>Tap <strong>"Import Flashcards"</strong></li>
+                <li>Choose import mode:
+                    <ul>
+                        <li><strong>Replace All Data:</strong> Deletes current flashcards and replaces with imported ones</li>
+                        <li><strong>Merge with Existing:</strong> Keeps current flashcards and adds imported ones (no duplicates)</li>
+                    </ul>
+                </li>
+                <li>Select your backup file (.json)</li>
+                <li>Confirm the import</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: Is BrainDeck free?</div>
+                <div class="faq-answer">A: Yes! BrainDeck is completely free with no ads, no subscriptions, and no in-app purchases.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: Do I need an internet connection?</div>
+                <div class="faq-answer">A: No! BrainDeck works completely offline. All your flashcards are stored locally on your device.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: Can I sync my flashcards across multiple devices?</div>
+                <div class="faq-answer">A: Currently, BrainDeck stores data locally on your device. However, you can use the Export/Import feature to transfer flashcards between devices, or rely on iCloud Backup to restore data when setting up a new device.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: Will I lose my flashcards if I update the app?</div>
+                <div class="faq-answer">A: No! Your flashcards are safely stored and will remain intact when you update BrainDeck from the App Store.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: Will I lose my flashcards if I delete the app?</div>
+                <div class="faq-answer">A: Yes. If you uninstall BrainDeck, all data will be deleted. Use the Export feature to create a backup before uninstalling.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: How many flashcards can I create?</div>
+                <div class="faq-answer">A: There's no limit! Create as many flashcards and folders as you need.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: Can I share my flashcard decks with friends?</div>
+                <div class="faq-answer">A: Yes! Use the Export feature to create a backup file, then share it via AirDrop, email, or Messages. Your friend can import it into their BrainDeck app.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: How do I reorder flashcards?</div>
+                <div class="faq-answer">A: Tap the three-dot menu (⋯) on any flashcard, then use the "Move Up" or "Move Down" buttons to reorder cards within a folder.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: Can I add images to flashcards?</div>
+                <div class="faq-answer">A: Currently, BrainDeck supports text-only flashcards. Image support may be added in future updates.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: Does BrainDeck collect my data?</div>
+                <div class="faq-answer">A: No! BrainDeck does not collect, store, or transmit any personal data. Everything stays on your device. We don't use analytics, tracking, or any third-party services.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: My device backed up to iCloud. Will my flashcards be backed up too?</div>
+                <div class="faq-answer">A: Yes! If you have iCloud Backup enabled, iOS automatically backs up BrainDeck's data. When you restore from iCloud backup or set up a new device, your flashcards will be restored.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: How do I delete a folder?</div>
+                <div class="faq-answer">A: Long-press on a folder to bring up the context menu, then select "Delete Folder." Note: This will also delete all flashcards and subfolders within it.</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Troubleshooting</h2>
+
+            <h3>App crashes or freezes</h3>
+            <ul>
+                <li>Make sure you have the latest version of BrainDeck from the App Store</li>
+                <li>Restart your device</li>
+                <li>If the problem persists, contact support (see below)</li>
+            </ul>
+
+            <h3>Import not working</h3>
+            <ul>
+                <li>Ensure the file is a valid BrainDeck backup (.json file)</li>
+                <li>Check that the file wasn't corrupted during transfer</li>
+                <li>Try exporting a fresh backup and importing that to test</li>
+            </ul>
+
+            <h3>Can't see all my flashcards</h3>
+            <ul>
+                <li>Check if flashcards are inside collapsed folders</li>
+                <li>Tap folders to expand them and view their contents</li>
+                <li>Look in the "UNORGANIZED" section for cards not in folders</li>
+            </ul>
+
+            <h3>Settings won't scroll</h3>
+            <ul>
+                <li>Try scrolling with two fingers or using a scroll gesture</li>
+                <li>Look for the scroll indicator on the right side</li>
+                <li>Make sure you're scrolling within the settings area</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Tips for Effective Learning</h2>
+
+            <h3>📚 Organize by Subject</h3>
+            <p>Create separate folders for each subject or course. Use subfolders to break down topics further (e.g., "Spanish" → "Verbs" → "Present Tense").</p>
+
+            <h3>🎯 Keep Cards Simple</h3>
+            <p>Each flashcard should focus on one concept. Short, clear questions and answers are easier to remember.</p>
+
+            <h3>🔄 Review Regularly</h3>
+            <p>Consistent, spaced repetition is key to long-term retention. Review flashcards daily for best results.</p>
+
+            <h3>🎨 Use Color Coding</h3>
+            <p>Assign different colors to different subjects or difficulty levels to quickly identify card types.</p>
+
+            <h3>💾 Backup Before Exams</h3>
+            <p>Export your flashcards before major exams as a backup, and share study materials with classmates.</p>
+        </section>
+
+        <div class="contact-box">
+            <h2>Need More Help?</h2>
+            <p>We're here to help! If you have questions, feedback, or need assistance, please contact us:</p>
+            <p><a href="mailto:support@techprime.com">support@techprime.com</a></p>
+            <p style="margin-top: 20px; font-size: 0.9em;">We typically respond within 24-48 hours.</p>
+        </div>
+
+        <footer>
+            <p><strong>BrainDeck</strong></p>
+            <p>Version 1.0</p>
+            <p>Copyright © 2025 TechPrime LLC. All rights reserved.</p>
+            <p style="margin-top: 20px;">
+                <a href="privacy.html" style="color: #667eea; text-decoration: none;">Privacy Policy</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
